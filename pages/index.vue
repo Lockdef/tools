@@ -5,12 +5,11 @@
         <h1 class="title">便利ツール集</h1>
         <div class="links">
           <a
-            href="https://github.com/nuxt/nuxt.js"
             target="_blank"
             rel="noopener noreferrer"
             class="button--grey"
           >
-            GitHub
+            GO!
           </a>
         </div>
       </div>
