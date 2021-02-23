@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <h1>便利ツール集リスト</h1>
+    <li>
+      <ul>
+        文字数カウント
+      </ul>
+    </li>
+  </div>
+</template>
