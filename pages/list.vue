@@ -3,12 +3,12 @@
     <h1 class="title">便利ツール集リスト</h1>
     <ul>
       <li><a href="char_counter">文字数カウンター</a></li>
+      <li><a href="todo">TODOアプリ</a></li>
     </ul>
   </div>
 </template>
 
 <style>
-
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -39,5 +39,4 @@
 .links {
   padding-top: 15px;
 }
-
 </style>

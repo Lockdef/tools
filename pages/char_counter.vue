@@ -2,8 +2,14 @@
   <div>
     <h1 class="title">文字数カウンター</h1>
     <p>下記のテキストボックスに書き込んでください</p>
-    <textarea v-model="text" name="text" id="text" cols="100" rows="20"></textarea>
-    <p>文字数：{{text.length}}</p>
+    <textarea
+      id="text"
+      v-model="text"
+      name="text"
+      cols="100"
+      rows="20"
+    ></textarea>
+    <p>文字数：{{ text.length }}</p>
     <a href="/list">戻る</a>
   </div>
 </template>
@@ -13,9 +19,9 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      text: ""
+      text: '',
     }
-  }
+  },
 })
 </script>
 
