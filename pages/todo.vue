@@ -6,7 +6,7 @@
       <input type="submit" @click="pushTodo" />
     </p>
     <ul v-for="todo in todos" :key="todo.id">
-      <li>{{ todo }} <button>完了</button></li>
+      <li>{{ todo }} <button @click="deleteTodo(todo)">完了</button></li>
     </ul>
   </div>
 </template>
@@ -24,6 +24,9 @@ export default Vue.extend({
       if (!this.text) return
       this.todos.push(this.text)
       this.text = ''
+    },
+    deleteTodo(target: string) {
+      this.todos = this.todos.filter((todo) => todo !== target)
     },
   },
 })
