@@ -19,6 +19,19 @@ export default Vue.extend({
       todos: [],
     }
   },
+  watch: {
+    todos: {
+      handler() {
+        localStorage.setItem('todos', this.todos)
+      },
+    },
+  },
+  mounted() {
+    const todos = localStorage.getItem('todos')
+    console.log(todos)
+    if (!todos) return
+    this.todos = todos.split(',')
+  },
   methods: {
     pushTodo() {
       if (!this.text) return
