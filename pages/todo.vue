@@ -12,8 +12,13 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+interface DataInterFace {
+  text: string
+  todos: string[]
+}
+
 export default Vue.extend({
-  data() {
+  data(): DataInterFace {
     return {
       text: '',
       todos: [],
@@ -22,13 +27,12 @@ export default Vue.extend({
   watch: {
     todos: {
       handler() {
-        localStorage.setItem('todos', this.todos)
+        localStorage.setItem('todos', this.todos.toString())
       },
     },
   },
   mounted() {
     const todos = localStorage.getItem('todos')
-    console.log(todos)
     if (!todos) return
     this.todos = todos.split(',')
   },
