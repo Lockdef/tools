@@ -10,7 +10,7 @@
       rows="20"
     ></textarea>
     <p>文字数：{{ text.length }}</p>
-    <a href="/list">戻る</a>
+    <nuxt-link to="/list">戻る</nuxt-link>
   </div>
 </template>
 

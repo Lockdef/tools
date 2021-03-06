@@ -2,8 +2,8 @@
   <div>
     <h1 class="title">便利ツール集リスト</h1>
     <ul>
-      <li><a href="char_counter">文字数カウンター</a></li>
-      <li><a href="todo">TODOアプリ</a></li>
+      <li><nuxt-link to="/char_counter">文字数カウンター</nuxt-link></li>
+      <li><nuxt-link to="/todo">TODOアプリ</nuxt-link></li>
     </ul>
   </div>
 </template>

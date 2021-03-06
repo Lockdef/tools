@@ -8,6 +8,7 @@
     <ul v-for="todo in todos" :key="todo.id">
       <li>{{ todo }} <button @click="deleteTodo(todo)">完了</button></li>
     </ul>
+    <nuxt-link to="/list">戻る</nuxt-link>
   </div>
 </template>
 <script lang="ts">

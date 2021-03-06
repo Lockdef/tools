@@ -4,14 +4,14 @@
       <div>
         <h1 class="title">便利ツール集</h1>
         <div class="links">
-          <a
-            href="list"
+          <nuxt-link
+            href="/list"
             target="_blank"
             rel="noopener noreferrer"
             class="button--grey"
           >
             GO!
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>
